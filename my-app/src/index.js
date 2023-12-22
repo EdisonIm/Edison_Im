@@ -9,11 +9,13 @@ import reportWebVitals from './reportWebVitals';
 // import CommentList from './chapter05/CommentList';
 // import NotificationList from './chapter06/NotificationList';
 // import Accomodate from './chapter07/Accomodate';
-import ConfirmButton from './chapter08/ConfirmButton';
+// import ConfirmButton from './chapter08/ConfirmButton';
+// import LandingPage from './chapter09/LandingPage';
+import AttendanceBook from './chapter10/AttendanceBook';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ConfirmButton />
+    <AttendanceBook />
   </React.StrictMode>,
   document.getElementById('root')
 );
