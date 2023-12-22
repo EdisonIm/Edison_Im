@@ -8,10 +8,11 @@ import Library from './chapter03/library';
 import Clock from './chapter04/clock';
 import CommentList from './chapter05/CommentList';
 import NotificationList from './chapter06/NotificationList';
+import Accomodate from './chapter07/Accomodate';
 
 ReactDOM.render(
   <React.StrictMode>
-    <NotificationList />
+    <Accomodate />
   </React.StrictMode>,
   document.getElementById('root')
 );
