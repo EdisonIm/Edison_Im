@@ -15,5 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  },
+  "dependencies": {
+    "styled-components": "^6.1.4"
   }
 }
