@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<ul>
+    <li>ego</li>
+    <li>kbs</li>
+    <li>sol</li>
+</ul>
+
+<script type="text/javascript">
+    var grades = {
+        'list': {'egoing': 10, 'k8805': 6, 'sorialgi': 80},
+        'show' : function(){
+            for(var name in this.list){
+                document.write(name+':'+this.list[name]+"<br />");
+            }
+        }
+    };
+    grades.show();
+
+    /*
+    var grades = {'ego' : 10, 'kbs' : 20, 'sol' : 40};
+    for(var name in grades) {
+        document.write("key : " + name + " value : " + grades[name] + "<br />");
+    }
+
+    /*
+    var grades = {'ego' : 10, 'kbs' : 20, 'sol' : 40};
+    for(var key in grades) {
+        document.write("key : " + name + " value : " + grades[key] + "<br />");
+    }
+    */
+</script>
+</body>
+</html>
