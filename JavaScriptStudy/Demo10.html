@@ -5,7 +5,56 @@
 </head>
 <body>
 <script>
+    
+    Object.prototype.contain = function(neddle) {
+        for(var name in this){
+            if(this[name] === neddle){
+                return true;
+            }
+        }
+        return false;
+    }
+    var o = {'name':'paradigm', 'city':'seoul'}
+    console.log(o.contain('paradigm'));
+    var a = ['paradigm','innovation','career'];
+    console.log(a.contain('career'));
 
+
+    for(var name in o){
+        if(o.hasOwnProperty(name))
+            console.log(name);  
+    }
+
+/*
+    //Object.keys()
+    var arr = ["a", "b", "c"];
+    console.log('Object.keys(arr)', Object.keys(arr));
+
+    //Object.prototype.toString()
+    var o = new Object();
+    console.log('o.toString()', o.toString());
+
+    var a = new Array(1,2,3);
+    console.log('a.toString()', a.toString());
+
+
+    Array.prototype.rand = function(){
+        var index = Math.floor(this.length*Math.random());
+        return this[index];
+    }
+    var arr = new Array('seoul','new york','ladarkh','pusan', 'Tsukuba');
+    console.log(arr.rand());
+
+
+    var arr = new Array('seoul','new york','ladarkh','pusan', 'Tsukuba');
+    function getRandomValueFromArray(haystack){
+        var index = Math.floor(haystack.length*Math.random());
+        return haystack[index]; 
+    }
+    console.log(getRandomValueFromArray(arr));
+
+
+    
     function Ultra(){}
     Ultra.prototype.ultraProp = true;
      
@@ -18,7 +67,8 @@
     var o = new Sub();
     console.log(o.ultraProp);
     document.write(o.ultraProp);
-/*  객체 o에서 ultraProp를 찾는다.
+
+  객체 o에서 ultraProp를 찾는다.
     없다면 Sub.prototype.ultraProp를 찾는다.
     없다면 Super.prototype.ultraProp를 찾는다.
     없다면 Ultra.prototype.ultraProp를 찾는다.
