@@ -5,7 +5,18 @@
 </head>
 <body>
 <script>
-    
+    var grades = {
+        'list': {'egoing': 10, 'k8805': 6, 'sorialgi': 80},
+        'show' : function(){
+            for(var name in this.list){
+                document.write(name+':'+this.list[name]+"<br />");
+            }
+        }
+    };
+    grades.show();
+
+
+    /*
     Object.prototype.contain = function(neddle) {
         for(var name in this){
             if(this[name] === neddle){
@@ -25,7 +36,7 @@
             console.log(name);  
     }
 
-/*
+
     //Object.keys()
     var arr = ["a", "b", "c"];
     console.log('Object.keys(arr)', Object.keys(arr));
